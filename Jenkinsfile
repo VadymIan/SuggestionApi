@@ -1,6 +1,6 @@
 pipeline {
     environment {
-    imagename = "mylocaldocker3103/suggestionApi"
+    imagename = "mylocaldocker3103/suggestionapi"
     dockerImage = ''
   }
 
