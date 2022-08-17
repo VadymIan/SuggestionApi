@@ -25,7 +25,7 @@ pipeline {
             
             post {
                 always {
-                    ws('/var/lib/jenkins/workspace/BlazorApp/TestProject/TestResults')
+                    ws('/var/lib/jenkins/workspace/SuggestionAPI/SuggestionApplication.Tests/TestResults')
                     {
                         mstest()
                     }                    
