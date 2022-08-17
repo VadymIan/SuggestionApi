@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/VadymIan/SuggestionApi.git'
+                git 'https://github.com/VadymIan/suggestionapi.git'
             }
         }
         stage('Building') {
