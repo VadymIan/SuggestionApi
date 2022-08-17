@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Running Tests') {
             steps {
-                sh 'dotnet test --logger "trx;LogFileName=TestResult.trx" TestProject/TestProject.csproj'
+                sh 'dotnet test --logger "trx;LogFileName=TestResult.trx" SuggestionApplication/SuggestionApplication.Tests.csproj'
             }
             
             post {
