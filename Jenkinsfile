@@ -33,11 +33,11 @@ pipeline {
             }
         }
 	stage('Building Image') {
-		steps {
-			script {
-				dockerImage = docker.build(imagename)
-			}
+	    steps {
+		script {
+		    dockerImage = docker.build(imagename)
 		}
+	    }
 	}
 	stage('Pushing Image') {
 		steps {
