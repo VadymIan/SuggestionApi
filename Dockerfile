@@ -18,7 +18,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 
 RUN apt-get update
-RUN	apt-get -y install procps && rm -rf /var/lib/apt/lists/*
+RUN apt-get -y install procps && rm -rf /var/lib/apt/lists/*
 RUN apt-get update
 RUN apt-get -y install curl
 RUN apt-get update
