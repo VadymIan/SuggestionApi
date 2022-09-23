@@ -20,7 +20,8 @@ services:
                 ipv4_address: 192.8.0.1
             
     sugges:
-        image: suggestion/api:latest
+        image: suggestionapiacr.azurecr.io/suggestionazureapi:latest
+        #image: suggestion/api:latest
         mem_limit: 512m
         container_name: suggestionapplication
         ports:

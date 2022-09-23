@@ -11,7 +11,7 @@ namespace SuggestionApplication.Persistence
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<SuggestionApplicationDbContext>(options => 
-                options.UseSqlServer(configuration.GetConnectionString("Azure")));
+                options.UseSqlServer(configuration.GetConnectionString("Local")));
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
 
