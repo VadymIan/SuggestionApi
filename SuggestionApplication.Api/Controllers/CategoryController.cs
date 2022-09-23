@@ -44,7 +44,7 @@ namespace SuggestionApplication.Api.Controllers
         public IActionResult GetRandomInt()
         {
             Random rnd = new Random();
-            var value = rnd.Next(100);
+            var value = rnd.Next(99);
 
             return Ok(value);
         }
