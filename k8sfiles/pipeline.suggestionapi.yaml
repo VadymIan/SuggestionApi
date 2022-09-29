@@ -11,7 +11,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '6a843756-a51e-4275-80ee-c736c6f98817'
+  dockerRegistryServiceConnection: 'b1c72062-b737-484b-8f09-a1be8ff20a1a'
   imageRepository: 'suggestionazureapi'
   containerRegistry: 'suggestionapiacr.azurecr.io'
   dockerfilePath: 'Dockerfile'
