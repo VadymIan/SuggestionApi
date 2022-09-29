@@ -91,12 +91,12 @@ stages:
     - task: Kubernetes@1
       inputs:
         connectionType: 'Kubernetes Service Connection'
-        kubernetesServiceEndpoint: 'suggestionapi-aks'
+        kubernetesServiceEndpoint: 'suggestionapi-connectionname'
         namespace: 'default'
         command: 'apply'
         useConfigurationFile: true
         configuration: '$(Build.SourcesDirectory)/SuggestionApi/$(deploymentFile)'
         secretType: 'dockerRegistry'
         containerRegistryType: 'Azure Container Registry'
-        azureSubscriptionEndpointForSecrets: 'MVPSponsorship (e57087a4-a053-48c9-8857-995316398cdc)'
+        azureSubscriptionEndpointForSecrets: 'Azure subscription 1 (b1c72062-b737-484b-8f09-a1be8ff20a1a)'
         azureContainerRegistry: 'suggestionapiacr.azurecr.io'
