@@ -75,7 +75,7 @@ stages:
     pool:
       vmImage: $(vmImageName)
     steps:
-    - task: replacetokens@3
+    - task: replacetokens@2
       inputs:
         rootDirectory: '$(Build.SourcesDirectory)/SuggestionApi'
         targetFiles: '$(deploymentFile)'
