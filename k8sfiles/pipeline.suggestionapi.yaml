@@ -85,5 +85,5 @@ stages:
         configuration: '$(Build.SourcesDirectory)/SuggestionApi/$(deploymentFile)'
         secretType: 'dockerRegistry'
         containerRegistryType: 'Azure Container Registry'
-        azureSubscriptionEndpointForSecrets: 'Azure subscription 1 (b1c72062-b737-484b-8f09-a1be8ff20a1a)'
+        azureSubscriptionEndpointForSecrets: 'suggestionapi-connectionname'
         azureContainerRegistry: 'suggestionapiacr.azurecr.io'
