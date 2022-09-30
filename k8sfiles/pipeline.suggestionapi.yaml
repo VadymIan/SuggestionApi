@@ -11,7 +11,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'b1c72062-b737-484b-8f09-a1be8ff20a1a'
+  dockerRegistryServiceConnection: '27d2dffa-6323-4e0b-baa6-331fa546037e'
   imageRepository: 'suggestionazureapi'
   containerRegistry: 'suggestionapiacr.azurecr.io'
   dockerfilePath: 'Dockerfile'
@@ -62,7 +62,7 @@ stages:
         command: push
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        containerRegistry: $(dockerRegistryServiceConnection)
+        containerRegistry: 'suggestionapiacr-connection'
         buildContext: $(Build.SourcesDirectory)/SuggestionApi
         tags: |
           $(tag)
